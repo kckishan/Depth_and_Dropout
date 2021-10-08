@@ -39,12 +39,12 @@ python image_experiments.py
 
 If you find this code useful, please consider citing our paper:
 
-> Kishan K C, Mahdi Gilany, & Rui Li. (2021). Joint Inference for Neural Network Depth and Dropout Regularization. Proceedings of the Advances in Neural Information Processing Systems. 
+> Kishan K C, Rui Li, Mahdi Gilany. (2021). Joint Inference for Neural Network Depth and Dropout Regularization. Proceedings of the Advances in Neural Information Processing Systems. 
 
 ```bibtex
 @misc{kc2021DepthandDropout,
     title={Joint Inference for Neural Network Depth and Dropout Regularization},
-    author={K C, Kishan and Gilany, Mahdi and Li, Rui}
+    author={K C, Kishan and Li, Rui and Gilany, Mahdi }
     journal={Advances in Neural Information Processing Systems },
     year={2021}
 }
