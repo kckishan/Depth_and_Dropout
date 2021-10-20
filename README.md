@@ -17,6 +17,12 @@ The basic codebase is implemented in Python 3.7.6 and is provided in experiments
 9. texttable 	        1.6.2
 ```
 
+Install all requirements and `Depth_and_Dropout` package using following commands
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
+
 Change to the `experiments` directory:
 ```bash
 cd experiments
@@ -42,10 +48,10 @@ If you find this code useful, please consider citing our paper:
 > Kishan K C, Rui Li, Mahdi Gilany. (2021). Joint Inference for Neural Network Depth and Dropout Regularization. Proceedings of the Advances in Neural Information Processing Systems. 
 
 ```bibtex
-@misc{kc2021DepthandDropout,
-    title={Joint Inference for Neural Network Depth and Dropout Regularization},
-    author={K C, Kishan and Li, Rui and Gilany, Mahdi }
-    journal={Advances in Neural Information Processing Systems },
-    year={2021}
+@inproceedings{kc2021DepthandDropout,
+ title={Joint Inference for Neural Network Depth and Dropout Regularization},
+ author={K C, Kishan and Li, Rui and Gilany, Mahdi}
+ booktitle = {Advances in Neural Information Processing Systems},
+ year = {2021}
 }
-``` 
+```
