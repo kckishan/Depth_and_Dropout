@@ -118,7 +118,6 @@ class AdaptiveConvNet(nn.Module):
         y : real labels
         N_train: number of training data points
         kl_weight: coefficient to scale KL component
-        test: Flag to indicate test mode
 
         Returns
         -------

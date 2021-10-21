@@ -87,7 +87,7 @@ class AdaptiveMLP(nn.Module):
         neg_loglike_fun : Negative log likelihood function
         act_vec : scores from different samples of latent neural architecture Z
         y : real labels
-        test: Flag to indicate test mode
+
         Returns
         -------
         mean_neg_loglike: Expectation of negative log likelihood of the model based on different structures Z
@@ -107,7 +107,6 @@ class AdaptiveMLP(nn.Module):
         y : real labels
         N_train: number of training data points
         kl_weight: coefficient to scale KL component
-        test: Flag to indicate test mode
 
         Returns
         -------

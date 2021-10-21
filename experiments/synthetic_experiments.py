@@ -26,6 +26,8 @@ def argument_parser():
                         help="Temperature for prior Concrete Bernoulli ")
     parser.add_argument("--temp", type=float, default=.1,
                         help="Temperature for posterior Concrete Bernoulli")
+    parser.add_argument("--epsilon", type=float, default=0.01,
+                        help="Epsilon to select the activated layers")
     parser.add_argument("--truncation_level", type=int, default=100,
                         help="K: Truncation level for variational approximation")
     parser.add_argument('--use_cuda', action='store_false',
@@ -145,7 +147,7 @@ with torch.no_grad():
 
 pred_mu = preds.mean(0)
 test_loss = loss_fn(pred_mu, Y_test_t.to(device))
-test_rmse = test_loss.mean() ** 0.5
+test_rmse = (test_loss.mean() ** 0.5).item()
 
 print("RMSE:", test_rmse)
 result = {'rmse': test_rmse}

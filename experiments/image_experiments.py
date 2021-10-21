@@ -31,6 +31,8 @@ def argument_parser():
                         help="Temperature for Concrete Bernoulli from prior")
     parser.add_argument("--temp", type=float, default=.5,                 
                         help="Temperature for Concrete Bernoulli from posterior")
+    parser.add_argument("--epsilon", type=float, default=0.01,
+                        help="Epsilon to select the activated layers")
     parser.add_argument("--truncation_level", type=int, default=10,
                         help="K+: Truncation for Z matrix")
     parser.add_argument("--a_prior", type=float, default=1.1,
